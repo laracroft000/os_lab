@@ -23,3 +23,5 @@ readerswriters(writer).c
 receiverpalindrome.c
 resourceeqbank.c
 senderpalindrome.c
+diskfcfs.c
+diskscan.c
