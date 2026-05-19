@@ -15,7 +15,7 @@ int main() {
         {2, 2}
     };
 
-    int available[2] = {0, 0};
+    int available[2] = {1, 3};
 
     int need[3][2];
     int finish[3] = {0};
@@ -23,16 +23,15 @@ int main() {
     int safeSeq[3];
     int count = 0;
 
-    // Calculate Need matrix
+  
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++)
             need[i][j] = max[i][j] - allocation[i][j];
 
-    // Initialize Work = Available
     for (int i = 0; i < m; i++)
         work[i] = available[i];
 
-    // Safety Algorithm
+
     while (count < n) 
     {
         int found = 0;
@@ -61,7 +60,7 @@ int main() {
             break;
     }
 
-    // Deadlock Detection Result
+
     if (count == n) {
         printf("System is in SAFE state\nSafe sequence: ");
         for (int i = 0; i < n; i++)
