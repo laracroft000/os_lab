@@ -18,8 +18,8 @@ pagefcfs.c
 pagelru.c
 pageoptimal.c
 pipequadratic.c
-readerswriters(reader).c
-readerswriters(writer).c
+readerswritersreader.c
+readerswriterswriter.c
 receiverpalindrome.c
 resourceeqbank.c
 senderpalindrome.c
